@@ -6,7 +6,7 @@
  * main -print a string to the standard error (2)
  *
  * Return: return 1 the value of standard output
- * /
+ */
  
  int main(void)
  
