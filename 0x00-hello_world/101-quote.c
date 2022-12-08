@@ -10,11 +10,13 @@
  
 int main(void)
 {
-	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";	 
- /*
-  * write(STDOUT_FILENO, "hello world", strlen("hello world"));
-  */
-	 write(2, str, strlen(str));
+	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	 return (1);
+	/*
+	 * write(STDOUT_FILENO, "hello world", strlen("hello world"));
+	 */
+
+	write(2, str, strlen(str));
+
+	return (1);
 }
