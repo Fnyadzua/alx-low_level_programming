@@ -4,7 +4,7 @@
  * Description - prints single numbers of base 10 including 0
  * Return: 0
  */
-int main(voi)
+int main(void)
 {
 	int a;
 
