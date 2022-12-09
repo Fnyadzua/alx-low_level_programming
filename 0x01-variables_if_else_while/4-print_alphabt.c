@@ -5,7 +5,7 @@
  * q and e letters are not included
  * Return: 0
  */
-int main(v0id)
+int main(void)
 {
 	char a = 'a';
 
