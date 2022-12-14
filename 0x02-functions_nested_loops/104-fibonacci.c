@@ -37,6 +37,6 @@ int main(void)
 	aft2 = aft2 + bef2;
 	bef2 = aft2 - bef2;
 }
-print("\n");
+printf("\n");
 return (0);
 }
