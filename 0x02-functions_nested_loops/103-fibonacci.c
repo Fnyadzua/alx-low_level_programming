@@ -1,30 +1,31 @@
 #include <stdio.h>
 /**
- * main - print even valued terms of fibonacci
+ * main - Entry point
  *
- * Return: 0 for success
+ * purpose - fibonacci
+ *
+ * Return: (0) always
  */
 int main(void)
 {
-	long int n1, n2, fn;
-	long int sum;
+	unsigned long int lim = 4000000;
+	unsigned long int bef = 0;
+	unsigned long int aft = 1;
+	unsigned long int R = 0;
+	unsigned long int sum = 0;
 
-	n1 = 1;
-	n2 = 2;
-	sum = 0;
-	fn = 0;
-
-	while (fn < 4000000)
+	while (lim > R)
 	{
-		fn = n1 + n2;
-		n1 = n2;
-		n2 = fn;
+		R = bef + aft;
 
-		if ((n1 % 2) == 0)
+		if ((R % 2) == 0)
 		{
-			sum += n1;
+			sum += R;
 		}
+
+		bef = aft;
+		aft = R;
 	}
-	printf("%1d\n", sum);
+	printf("%li\n", sum);
 	return (0);
 }
