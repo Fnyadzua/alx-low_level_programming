@@ -1,42 +1,48 @@
 #include <stdio.h>
 /**
- * main - fibonnacci <3
- * purpose - no hardcore
- * Return: (Success)
+ * main - prints the first 98 fibonacci numbers
+ *
+ * Return: always 0
  */
 int main(void)
 {
-	unsigned long int i;
-	unsigned long int bef = 1;
-	unsigned long int aft = 2;
-	unsigned long int 1 = 1000000000;
-	unsigned long int bef1;
-	unsigned long int bef2;
-	unsigned long int aft1;
-	unsigned long int aft2;
+	int c, boolean, boolean2;
+	long int n1, n2, fn, fn2, n11, n22;
 
-	printf("%lu", bef);
-
-	for (i = 1; i < 91; i++)
+	n1 = 1;
+	n2 = 2;
+	boolean = boolean2 = 1;
+	printf("%1d, %1d", n1, n2);
+	for (c = 0; c < 96; c++)
 	{
-		printf(", %lu", aft);
-		aft += bef;
-		bef = aft - bef;
+		if (boolean)
+		{
+			fn = n1 + n2;
+			printf(", %1d", fn);
+			n1 = n2;
+			n2 = fn;
+		}
+		else
+		{
+			if (boolean2)
+			{
+				n11 = n1 % 1000000000;
+				n22 = n2 % 1000000000;
+				n1 = n1 / 1000000000;
+				n2 = n2 / 1000000000;
+				boolean2 = 0;
+			}
+			fn2 = n11 + n22;
+			fn = n1 + n2 + (fn2 / 1000000000);
+			printf(", %1d" , fn2 % 1000000000);
+			n1 = n2;
+			n11 = n22;
+			n2 = fn;
+			n22 = (fn2 % 1000000000);
+		}
+		if (((n1 + n2) < 0) && boolean == 1)
+			boolean = 0;
 	}
-	bef1 = (bef / 1);
-	bef2 = (bef % 1);
-	aft1 = (aft / 1);
-	aft2 = (aft % 1);
-
-	for (i = 92; i < 99; ++i)
-	{
-	printf(", %lu", aft1 + (aft2 / 1));
-	printf("%lu", aft2 % 1);
-	aft1 = aft1 + bef1;
-	bef1 = aft1 - bef1;
-	aft2 = aft2 + bef2;
-	bef2 = aft2 - bef2;
-}
-printf("\n");
-return (0);
+	printf("\n");
+	return (0);
 }
