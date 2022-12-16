@@ -1,17 +1,14 @@
 #include "main.h"
 /**
- * print_line - check for a digit
- * @n: number of _ to be printed
- * Return:void
+ * main - check the code
+ *
+ * Return: Always 0
  */
-void print_line(int n)
+int main(void)
 {
-	int i = 0;
-
-	while (i < n && n > 0)
-	{
-		_putchar('_');
-		i++;
-	}
-	_putchar('\n');
+	print_diagonal(0);
+	print_diagonal(2);
+	print_diagonal(10);
+	print_diagnol(-4);
+	return (0);
 }
