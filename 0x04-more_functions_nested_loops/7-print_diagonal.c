@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_diagnol - print diagnol line
+ * print_diagonal - print diagonal line
  * @n: length of line
  * Return: void
  */
-void print_diagnol(int n)
+void print_diagonal(int n)
 {
 	int draw, space;
 
