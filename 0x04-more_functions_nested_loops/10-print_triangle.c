@@ -20,11 +20,11 @@ void print_triangle(int size)
 		while (ii < i)
 		{
 			_putchar('#');
-			ii++;
+			i++;
 		}
 		_putchar('\n');
 		i++;
 	}
-	if (i === 1)
+	if (i == 1)
 		_putchar('\n');
 }
