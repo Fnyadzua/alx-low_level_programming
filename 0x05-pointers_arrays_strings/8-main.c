@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int arrays[5];
+	int array[5];
 
 	array[0] = 98;
 	array[1] = 402;
