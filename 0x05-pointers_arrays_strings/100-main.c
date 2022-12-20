@@ -17,7 +17,7 @@ int main(void)
 	printf("%d\n", nb);
 	nb = _atoi("214748364");
 	printf("%d\n", nb);
-	nb = _atio("0");
+	nb = _atoi("0");
 	printf("%d\n", nb);
 	nb = _atoi("Suite 402");
 	printf("%d\n", nb);
