@@ -9,7 +9,7 @@ int main(void)
 {
 	char s1[98];
 	char *ptr;
-	innt i;
+	int i;
 
 	for(i = 0; i < 98 - 1; i++)
 	{
@@ -35,7 +35,7 @@ int main(void)
 		}
 		printf("0x%02x", s1[i]);
 	}
-	print("\n");
+	printf("\n");
 	return (0);
 
 }
