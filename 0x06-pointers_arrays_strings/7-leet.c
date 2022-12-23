@@ -25,9 +25,9 @@ char *leet(char *s)
 				k = j;
 				s[i] = e[k];
 			}
-			j++
+			j++;
 		}
-		i++
+		i++;
 	}
 	return (s);
 }
