@@ -11,9 +11,9 @@ int main(void)
 	char *ptr;
 	innt i;
 
-	for(i = 0; i < 98 - 1; 1++)
+	for(i = 0; i < 98 - 1; i++)
 	{
-		s[i] = '*';
+		s1[i] = '*';
 	}
 	s1[i] = '\0';
 	printf("%s\n", s1);
