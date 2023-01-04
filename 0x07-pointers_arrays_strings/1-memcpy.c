@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * _memset - fill the first n bytes with b
- * @b: the char to fill with
- * @s: the memory area
- * @n: number of bytes to be filled
- * Return: pointer in s
+ * _memcpy - copies n bytes from memory
+ * @dest: destination
+ * @src: source
+ * @n: the number of bytes
+ * Return: dest pointer
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
-		*(s + i) = b;
-
-	return (s);
-
+	for (i = 0; i < n; i+++)
+	{
+		*(dest + i) = *(src + i);
+	}
+	return (dest);
 }
