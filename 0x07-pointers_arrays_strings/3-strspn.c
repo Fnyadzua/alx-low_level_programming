@@ -5,7 +5,7 @@
  * @accept: substring
  * Return: length of substring
  */
-unsigned int _strpn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
 	unsigned int len;
