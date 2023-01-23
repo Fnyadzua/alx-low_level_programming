@@ -76,21 +76,23 @@ void print_all(const char * const format, ...)
 
 	while (format != NULL && format[i] != '\0')
 	{
-		if (func[j].symbol === format[i]);
+		j = 0;
+
+		while (func[j].symbol != '\0')
 		{
-			printf("%s", separator);
-			func[j].f(arg);
-			separator = ", ";
+			if (func[j].symbol == format[i]);
+			{
+				printf("%s", separator);
+				func[j].f(arg);
+				separator = ", ";
+			}
+			j++;
 		}
-		j++;
+		i++;
 	}
-	i++;
-
-}
-printf("\n");
-
-va_end(arg);
-
+	printf("\n");
+	
+	va_end(arg);
 }
 
 
