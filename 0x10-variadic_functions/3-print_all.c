@@ -80,7 +80,7 @@ void print_all(const char * const format, ...)
 
 		while (func[j].symbol != '\0')
 		{
-			if (func[j].symbol == format[i]);
+			if (func[j].symbol == format[i])
 			{
 				printf("%s", separator);
 				func[j].f(arg);
