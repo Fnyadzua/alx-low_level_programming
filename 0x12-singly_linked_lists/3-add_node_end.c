@@ -7,7 +7,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *add_node, *temp;
+	list_t *end_node, *temp;
 	unsigned int len, i;
 
 	end_node = malloc(sizeof(list_t));
