@@ -19,7 +19,7 @@ add_node_end(&head, "love");
 add_node_end(&head, "asm"); 
 print_list(head);
 free_list(head);
-head = Null;
+head = NULL;
 return (0);
 }
 
