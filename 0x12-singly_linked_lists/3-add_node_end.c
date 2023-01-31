@@ -3,7 +3,7 @@
  * add_node_end - func to add the last node to list
  * @head: start node of linked list
  * @str: string to add in the end node
- * return: pointer to the end node
+ * Return: pointer to the end node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -15,6 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	if (str == NULL)
 		return (NULL);
+	
 	len = 0;
 	for (i = 0; str[i]; i++)
 		len++;
